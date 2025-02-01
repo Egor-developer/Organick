@@ -1,0 +1,144 @@
+body {
+  font-weight: var(--main-weight);
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-inline-size: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-family: "Yellowtail", sans-serif;
+  color: var(--accent-color);
+  font-weight: var(--main-weight);
+  font-size: 36px;
+  line-height: 1.4em;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--title-weight);
+  color: var(--title-color);
+  font-size: 50px;
+  line-height: 1.2em;
+}
+
+.button {
+  padding: 28px 30px 28px 39px;
+  border: none;
+  border-radius: 16px;
+  background-color: var(--button-color);
+  font-weight: var(--button-weight);
+  font-size: 20px;
+  line-height: 1.2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button::after {
+  content: url(../images/icons/arrow-button.svg);
+  margin-inline-start: 10px;
+  margin-block-start: 5px;
+}
+
+.header {
+  max-inline-size: 1600px;
+  padding: 0 20px;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-text {
+  font-size: 38px;
+  line-height: 1.2em;
+  font-weight: var(--button-weight);
+  color: var(--title-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-list {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-list__item:nth-child(3) {
+  position: relative;
+}
+
+.menu-list__item:nth-child(3)::after {
+  content: url(../images/icons/arrow.svg);
+  right: -15px;
+  bottom: 3px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.menu-list__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: var(--title-color);
+}
+
+.search {
+  position: relative;
+}
+
+.search-input {
+  border-radius: 36px;
+  background-color: var(--dark-bg-color);
+  border: none;
+  block-size: 66px;
+  inline-size: 376px;
+  padding: 0 80px 0 20px;
+}
+
+.search-button {
+  inline-size: 56px;
+  block-size: 56px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  border: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.search-button::after {
+  content: url(../images/icons/search.svg);
+}
+
+.hero {
+  background-image: url(../images/hero-bg.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-patterns {
+  padding: 250px 0;
+  background-image: url(../images/hero-bg-patterns.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-title {
+  margin-block: 8px 23px;
+  max-inline-size: 530px;
+  font-size: 70px;
+  line-height: 1.2em;
+}
