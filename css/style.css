@@ -123,6 +123,11 @@ body {
 
 .hero {
   background-image: url(../images/hero-bg.jpg);
+  background-image: image-set(
+    url(../images/hero-bg.jpg) 1x,
+    url(../images/hero-bg_2x.jpg) 2x,
+    url(../images/hero-bg_3x.jpg) 3x
+  );
   background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,4 +146,48 @@ body {
   max-inline-size: 530px;
   font-size: 70px;
   line-height: 1.2em;
+}
+
+.selling-cards {
+  margin: 150px auto 200px;
+  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selling-card {
+  padding: 110px 55px;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  inline-size: 100%;
+}
+
+.selling-card:nth-child(1) {
+  background-image: image-set(
+    url(../images/selling-cards-1.jpg) 1x,
+    url(../images/selling-cards-1_2x.jpg) 2x,
+    url(../images/selling-cards-1_3x.jpg) 3x
+  );
+}
+
+.selling-card:nth-child(1) .selling-card__title,
+.selling-card:nth-child(1) .subtitle {
+  color: #fff;
+}
+
+.selling-card:nth-child(2) {
+  background-image: image-set(
+    url(../images/selling-cards-2.jpg) 1x,
+    url(../images/selling-cards-2_2x.jpg) 2x,
+    url(../images/selling-cards-2_3x.jpg) 3x
+  );
+}
+
+.selling-card__title {
+  margin-block-start: 8px;
+  max-inline-size: 280px;
+  font-size: 40px;
+  line-height: 1.1em;
 }
