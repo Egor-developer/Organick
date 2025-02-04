@@ -42,4 +42,9 @@ select {
 a {
   text-decoration: none;
   color: currentColor;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 70%;
 }

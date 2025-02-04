@@ -3,7 +3,14 @@
   --button-weight: 700;
   --title-weight: 800;
   --title-color: #274c5b;
-  --dark-bg-color: #fafafa;
+  --text-color: #525c60;
+  --dark-bg-color: #f9f8f8;
   --accent-color: #7eb693;
+  --hover-accent-color: #7fe2a3;
   --button-color: #efd372;
+  --button-hover-color: #ffd231;
+  --button-dark-color: #274c5b;
+  --dark-button-hover-color: #366f86;
+  --border-color: #dedddd;
+  --old-prise-color: #b8b8b8;
 }
