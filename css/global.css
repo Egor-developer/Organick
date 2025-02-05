@@ -40,11 +40,151 @@ select {
 }
 
 a {
-  text-decoration: none;
   color: currentColor;
+  text-decoration: none;
   transition: opacity 0.2s;
 }
 
 a:hover {
   opacity: 70%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: var(--main-weight);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-inline-size: 1400px;
+}
+
+.subtitle {
+  color: var(--accent-color);
+  font-family: "Yellowtail", sans-serif;
+  font-weight: var(--main-weight);
+  font-size: 36px;
+  line-height: 1.4em;
+}
+
+.title {
+  color: var(--title-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--title-weight);
+  font-size: 50px;
+  line-height: 1.2em;
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.7em;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  padding: 28px 30px 28px 39px;
+  font-weight: var(--button-weight);
+  font-size: 20px;
+  line-height: 1.2em;
+  background-color: var(--button-color);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.dark-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  padding: 28px 50px;
+  color: #fff;
+  font-weight: var(--button-weight);
+  font-size: 20px;
+  line-height: 1.2em;
+  background-color: var(--button-dark-color);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.dark-button:hover {
+  background-color: var(--dark-button-hover-color);
+}
+
+.button::after,
+.dark-button::after {
+  content: url(../images/icons/arrow-button.svg);
+  margin-inline-start: 10px;
+  margin-block-start: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 25px;
+  background-color: var(--dark-bg-color);
+}
+
+.card__category-label {
+  display: inline-block;
+  margin-block-end: 13px;
+  border-radius: 8px;
+  padding: 5px 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4em;
+  background-color: var(--title-color);
+}
+
+.card__image {
+  display: block;
+  margin: 0 auto;
+  margin-block-end: 2px;
+  max-inline-size: 300px;
+}
+
+.card__name {
+  border-block-end: 1px solid var(--border-color);
+  padding-block-end: 13px;
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 6px;
+}
+
+.card__prise {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card__prise-old {
+  color: var(--old-prise-color);
+  font-size: 15px;
+  line-height: 1.4em;
+  text-decoration: line-through;
+}
+
+.card__prise-now {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3em;
 }
