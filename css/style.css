@@ -360,6 +360,337 @@
   line-height: 1.2em;
 }
 
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-block: 180px;
+  background-color: var(--accent-bg-color);
+}
+
+.product-card {
+  display: flex;
+  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  block-size: 580px;
+}
+
+.product-card:nth-child(1) {
+  background-image: image-set(
+    url(../images/product-juice.jpg) 1x,
+    url(../images/product-juice_2x.jpg) 2x,
+    url(../images/product-juice_3x.jpg) 3x
+  );
+}
+
+.product-card:nth-child(2) {
+  background-image: image-set(
+    url(../images/product-food.jpg) 1x,
+    url(../images/product-food_2x.jpg) 2x,
+    url(../images/product-food_3x.jpg) 3x
+  );
+}
+
+.product-card:nth-child(3) {
+  background-image: image-set(
+    url(../images/product-cookis.jpg) 1x,
+    url(../images/product-cookis_2x.jpg) 2x,
+    url(../images/product-cookis_3x.jpg) 3x
+  );
+}
+
+.product-card__name {
+  margin: auto;
+  border-radius: 20px;
+  padding: 35px 80px;
+  font-size: 25px;
+  line-height: 1.2em;
+  background-color: #fff;
+}
+
+.news {
+  margin-block: 180px;
+}
+
+.news-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-block-end: 50px;
+}
+
+.news-title {
+  margin-block-start: 8px;
+  max-inline-size: 700px;
+}
+
+.news-button {
+  border: 1px solid var(--title-color);
+  color: var(--title-color);
+  background-color: transparent;
+}
+
+.news-button:hover {
+  color: #fff;
+  background-color: var(--title-color);
+}
+
+.news__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.news__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  block-size: 525px;
+}
+
+.news__card:nth-child(1) {
+  background-image: image-set(
+    url(../images/news-image-1.jpg) 1x,
+    url(../images/news-image-1_2x.jpg) 2x,
+    url(../images/news-image-1_3x.jpg) 3x
+  );
+}
+
+.news__card:nth-child(2) {
+  background-image: image-set(
+    url(../images/news-image-2.jpg) 1x,
+    url(../images/news-image-2_2x.jpg) 2x,
+    url(../images/news-image-2_3x.jpg) 3x
+  );
+}
+
+.news__card-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  padding: 15px 23px;
+  background-color: #fff;
+  max-inline-size: min-content;
+}
+
+.news__card-date__number {
+  font-size: 25px;
+  line-height: 1.2em;
+}
+
+.news__card-date__month {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.news__card-info {
+  margin-block-end: -70px;
+  border-radius: 30px;
+  padding: 50px;
+  box-shadow: 0px 20px 35px 0px var(--box-shadow-color);
+  background-color: #fff;
+}
+
+.news__card-info__autor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-block-end: 15px;
+}
+
+.news__card-info__auto-name {
+  color: var(--title-color);
+}
+
+.news__card-info__title {
+  margin-block-end: 2px;
+  font-size: 25px;
+  line-height: 1.2em;
+}
+
+.news__card-info__text {
+  margin-block-end: 15px;
+  color: var(--title-color);
+}
+
+.subscribe-newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 120px;
+  border-radius: 20px;
+  padding: 105px 70px;
+  background-image: image-set(
+    url(../images/subscribe-newsletter-image.jpg) 1x,
+    url(../images/subscribe-newsletter-image_2x.jpg) 2x,
+    url(../images/subscribe-newsletter-image_3x.jpg) 3x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe-newsletter__title {
+  color: #fff;
+  max-inline-size: 340px;
+}
+
+.subscribe-newsletter__buttons {
+  display: flex;
+  gap: 5px;
+  block-size: 80px;
+}
+
+.subscribe-newsletter__input {
+  border: none;
+  border-radius: 16px;
+  padding: 0 25px;
+  background-color: #fff;
+  inline-size: 350px;
+}
+
+.subscribe-newsletter__input::placeholder {
+  color: var(--placeholder-color);
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+.subscribe-newsletter__button:hover {
+  color: #fff;
+  background-color: var(--dark-button-hover-color);
+}
+
+.subscribe-newsletter__button::after {
+  display: none;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-block-end: 100px;
+}
+
+.footer__contact {
+  border-inline-end: 1px solid var(--border-color);
+  padding-inline-end: 50px;
+  padding-block-end: 50px;
+  text-align: right;
+  max-inline-size: 285px;
+}
+
+.footer__contact-title {
+  margin-block-end: 30px;
+  font-weight: var(--button-weight);
+  font-size: 30px;
+  line-height: 1.2em;
+}
+
+.footer__contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer__contact-item__title {
+  font-weight: var(--button-weight);
+}
+
+.footer__social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-inline-size: 550px;
+}
+
+.footer__social-media__text {
+  margin-block: 20px 50px;
+  text-align: center;
+}
+
+.footer__social-media__icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__social-media__icon {
+  display: flex;
+  border-radius: 50%;
+  background-color: var(--accent-social-media);
+  inline-size: 60px;
+  block-size: 60px;
+}
+
+.footer__social-media__icon path {
+  transition: 0.2s;
+}
+
+.footer__social-media__icon:hover {
+  opacity: 100%;
+}
+
+.footer__social-media__icon:hover .footer__social-media__icon-image {
+  opacity: 70%;
+}
+
+.footer__social-media__icon:hover .instagram path {
+  fill: #f56040;
+}
+
+.footer__social-media__icon:hover .instagram path + path {
+  fill: #e1306c;
+}
+
+.footer__social-media__icon:hover .facebook path {
+  fill: #001eff;
+}
+
+.footer__social-media__icon:hover .twitter path {
+  fill: #1da1f2;
+}
+
+.footer__social-media__icon:hover .pintrest path {
+  fill: #ff0000;
+}
+
+.footer__social-media__icon-image {
+  margin: auto;
+}
+
+.footer__pages {
+  border-inline-start: 1px solid var(--border-color);
+  padding-inline-start: 50px;
+  max-inline-size: 285px;
+}
+
+.footer__pages-title {
+  margin-block-end: 30px;
+  font-weight: var(--button-weight);
+  font-size: 30px;
+  line-height: 1.2em;
+}
+
+.footer__pages-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__copyright {
+  border-block-start: 1px solid var(--border-color);
+  padding-block: 20px;
+  text-align: center;
+}
+
+.footer__copyright-span {
+  font-weight: var(--button-weight);
+}
+
 @media (width <= 2000px) {
   .testimonial-image {
     max-inline-size: 20vw;

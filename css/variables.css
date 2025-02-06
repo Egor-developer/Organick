@@ -8,10 +8,14 @@
   --accent-color: #7eb693;
   --hover-accent-color: #7fe2a3;
   --dark-accent-color: #274c5b;
+  --accent-bg-color: #f1f8f4;
+  --accent-social-media: #eff6f1;
   --button-color: #efd372;
   --button-hover-color: #ffd231;
   --button-dark-color: #274c5b;
-  --dark-button-hover-color: #366f86;
+  --dark-button-hover-color: #09374a;
   --border-color: #dedddd;
   --old-prise-color: #b8b8b8;
+  --box-shadow-color: #a7a7a740;
+  --placeholder-color: #ababab;
 }
