@@ -1184,12 +1184,41 @@
     font-size: 16px;
   }
 
-  .menu {
+  .menu-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    inline-size: 100%;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--accent-color);
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+
+  .menu-list__item::after {
     display: none;
+  }
+
+  .menu-list__link {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    border-block-end: 1px solid var(--title-color);
   }
 
   .search {
     display: none;
+  }
+
+  .menu-image {
+    display: inline-block;
+    block-size: 30px;
+    inline-size: 30px;
+  }
+
+  .header:has(.menu-image:hover) .menu-list {
+    transform: translateY(0);
   }
 
   .hero {
@@ -1298,12 +1327,6 @@
     border-radius: 10px;
   }
 
-  .menu-image {
-    display: inline-block;
-    block-size: 30px;
-    inline-size: 30px;
-  }
-
   .hero-patterns {
     padding-block: 70px;
   }
@@ -1320,7 +1343,37 @@
     font-size: 25px;
   }
 
-  /* Stop here */
+  .about {
+    padding: 50px 0;
+  }
+
+  .about__title {
+    font-size: 25px;
+  }
+
+  .about__text {
+    margin-block-end: 30px;
+  }
+
+  .about-advantages {
+    margin-block-end: 30px;
+    gap: 50px;
+  }
+
+  .about-advantages__card {
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-advantages__card-title {
+    font-size: 20px;
+  }
+
+  .about-button__wrapper {
+    display: flex;
+    justify-content: center;
+  }
 
   .categories-cards {
     grid-template-columns: 1fr;
@@ -1335,10 +1388,19 @@
     grid-template-columns: 1fr;
   }
 
+  .eco-info__title {
+    font-size: 20px;
+  }
+
+  .product-card__name {
+    font-size: 25px;
+  }
+
   .subscribe-newsletter {
     background-image: none;
     background-color: var(--subscribe-newsletter-bg-color);
     block-size: 500px;
+    margin-inline: 10px;
   }
 
   .subscribe-newsletter__buttons {
