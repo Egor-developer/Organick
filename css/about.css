@@ -1,0 +1,67 @@
+.about-hero {
+  background-image: image-set(
+    url(../images/about-hero-image.jpeg) 1x,
+    url(../images/about-hero-image_2x.jpg) 2x,
+    url(../images/about-hero-image_3x.jpg) 3x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-hero__patterns {
+  background-image: url(../images/about-hero-patterns.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-block: 180px;
+  display: flex;
+}
+
+.about-hero__title {
+  font-size: 70px;
+  line-height: 1.2em;
+  margin: auto;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 160px 70px;
+}
+
+.about-us-image {
+  margin-inline-start: -200px;
+}
+
+.about-us__info {
+  max-inline-size: 650px;
+}
+
+.about-us__title {
+  margin-block: 8px 14px;
+  max-inline-size: 500px;
+}
+
+.about-us__text + .about-us__text {
+  margin-block-start: 50px;
+}
+
+.about-us-advantages {
+  margin-block: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us-advantages__card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about-us-advantages__card-title {
+  font-weight: 500;
+  font-size: 25px;
+}
