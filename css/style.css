@@ -679,6 +679,26 @@
   margin: auto;
 }
 
+.instagram:hover path {
+  fill: #f56040;
+}
+
+.instagram:hover path + path {
+  fill: #e1306c;
+}
+
+.facebook:hover path {
+  fill: #001eff;
+}
+
+.twitter:hover path {
+  fill: #1da1f2;
+}
+
+.pintrest:hover path {
+  fill: #ff0000;
+}
+
 .footer__pages {
   border-inline-start: 1px solid var(--border-color);
   padding-inline-start: 50px;

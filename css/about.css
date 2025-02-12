@@ -65,3 +65,188 @@
   font-weight: 500;
   font-size: 25px;
 }
+
+.choose-us {
+  padding-block: 190px;
+  background-color: var(--dark-bg-color);
+}
+
+.choose-us__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 90px;
+}
+
+.choose-us__info {
+  max-inline-size: 670px;
+}
+
+.choose-us__title {
+  margin-block: 6px 25px;
+  max-inline-size: 520px;
+}
+
+.choose-us__text {
+  margin-block-end: 35px;
+}
+
+.choose-us-info__advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.choose-us-info__advantages-title {
+  padding: 30px;
+  border-radius: 50px;
+  background-color: var(--advantages-title-bg);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  inline-size: 330px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-block-end: 12px;
+}
+
+.choose-us-info__advantages-title::before {
+  content: url(../images/icons/choose-us-icon.svg);
+  block-size: 19px;
+}
+
+.choose-us-info__advantages-text {
+  margin-inline-start: 60px;
+  max-inline-size: 444px;
+}
+
+.choose-us-advantages {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.choose-us-advantages__card {
+  max-inline-size: 260px;
+  padding: 50px 35px 20px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.choose-us-advantages__card-image__wrapper {
+  inline-size: 95px;
+  block-size: 95px;
+  display: flex;
+  background-color: var(--dark-bg-color);
+  border-radius: 18px;
+  margin-block-end: 15px;
+}
+
+.choose-us-advantages__card-image {
+  margin: auto;
+}
+
+.choose-us-advantages__card-title {
+  font-size: 23px;
+  margin-block-end: 12px;
+}
+
+.team {
+  margin-block: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-title {
+  margin-block-end: 15px;
+}
+
+.team-text {
+  text-align: center;
+  max-inline-size: 852px;
+  margin-block-end: 40px;
+}
+
+.team-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.team-card {
+  background-color: var(--dark-bg-color);
+  border-radius: 30px;
+  transition: 0.2s;
+}
+
+.team-card:hover {
+  background-color: #fff;
+  box-shadow: 0px 29px 44px 0px #96969640;
+}
+
+.team-card__info {
+  padding: 35px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.team-card__info-name {
+  font-size: 25px;
+  margin-block-end: 2px;
+}
+
+.team-card__info-job {
+  font-size: 22px;
+}
+
+.team-card__info-social-media__icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about-us-offer {
+  padding-block: 190px;
+  margin-block-end: 150px;
+  background-color: var(--title-color);
+}
+
+.about-us-offer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-offer__title {
+  color: #fff;
+  margin-block: 8px 33px;
+}
+
+.about-us-offer__cards {
+  display: flex;
+  gap: 20px;
+}
+
+.about-us-offer__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.about-us-offer__card-image {
+  border-radius: 30px;
+}
+
+.about-us-offer__card-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--button-weight);
+  color: #fff;
+  font-size: 25px;
+  line-height: 1.2em;
+}
