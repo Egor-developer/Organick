@@ -5,23 +5,23 @@
     url(../images/about-hero-image_3x.jpg) 3x
   );
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .about-hero__patterns {
+  display: flex;
+  padding-block: 180px;
   background-image: url(../images/about-hero-patterns.svg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: bottom;
-  padding-block: 180px;
-  display: flex;
+  background-size: cover;
 }
 
 .about-hero__title {
+  margin: auto;
   font-size: 70px;
   line-height: 1.2em;
-  margin: auto;
 }
 
 .about-us {
@@ -49,10 +49,12 @@
 }
 
 .about-us-advantages {
-  margin-block: 50px 60px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  row-gap: 30px;
+  margin-block: 50px 60px;
 }
 
 .about-us-advantages__card {
@@ -91,6 +93,10 @@
   margin-block-end: 35px;
 }
 
+.choose-us-image {
+  border-radius: 30px;
+}
+
 .choose-us-info__advantages__wrapper {
   display: flex;
   flex-direction: column;
@@ -98,16 +104,16 @@
 }
 
 .choose-us-info__advantages-title {
-  padding: 30px;
-  border-radius: 50px;
-  background-color: var(--advantages-title-bg);
   display: flex;
   align-items: center;
   gap: 7px;
-  inline-size: 330px;
-  font-weight: 500;
-  font-size: 20px;
   margin-block-end: 12px;
+  border-radius: 50px;
+  padding: 30px;
+  font-weight: var(--button-weight);
+  font-size: 20px;
+  background-color: var(--advantages-title-bg);
+  inline-size: 330px;
 }
 
 .choose-us-info__advantages-title::before {
@@ -122,28 +128,29 @@
 
 .choose-us-advantages {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
 .choose-us-advantages__card {
-  max-inline-size: 260px;
-  padding: 50px 35px 20px 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
   border-radius: 30px;
+  padding: 50px 35px 20px 35px;
   text-align: center;
+  background-color: #fff;
+  max-inline-size: 260px;
 }
 
 .choose-us-advantages__card-image__wrapper {
+  display: flex;
+  margin-block-end: 15px;
+  border-radius: 18px;
+  background-color: var(--dark-bg-color);
   inline-size: 95px;
   block-size: 95px;
-  display: flex;
-  background-color: var(--dark-bg-color);
-  border-radius: 18px;
-  margin-block-end: 15px;
 }
 
 .choose-us-advantages__card-image {
@@ -151,15 +158,15 @@
 }
 
 .choose-us-advantages__card-title {
-  font-size: 23px;
   margin-block-end: 12px;
+  font-size: 23px;
 }
 
 .team {
-  margin-block: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block: 200px;
 }
 
 .team-title {
@@ -167,37 +174,43 @@
 }
 
 .team-text {
+  margin-block-end: 40px;
   text-align: center;
   max-inline-size: 852px;
-  margin-block-end: 40px;
 }
 
 .team-cards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 .team-card {
-  background-color: var(--dark-bg-color);
   border-radius: 30px;
+  background-color: var(--dark-bg-color);
   transition: 0.2s;
 }
 
 .team-card:hover {
-  background-color: #fff;
   box-shadow: 0px 29px 44px 0px #96969640;
+  background-color: #fff;
+}
+
+.team-card__image {
+  max-inline-size: 400px;
 }
 
 .team-card__info {
-  padding: 35px 30px;
   display: flex;
   justify-content: space-between;
   align-items: end;
+  padding: 35px 30px;
 }
 
 .team-card__info-name {
-  font-size: 25px;
   margin-block-end: 2px;
+  font-size: 25px;
 }
 
 .team-card__info-job {
@@ -211,8 +224,8 @@
 }
 
 .about-us-offer {
-  padding-block: 190px;
   margin-block-end: 150px;
+  padding-block: 190px;
   background-color: var(--title-color);
 }
 
@@ -223,12 +236,14 @@
 }
 
 .about-us-offer__title {
-  color: #fff;
   margin-block: 8px 33px;
+  color: #fff;
 }
 
 .about-us-offer__cards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -244,9 +259,110 @@
 }
 
 .about-us-offer__card-description {
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: var(--button-weight);
-  color: #fff;
   font-size: 25px;
   line-height: 1.2em;
+}
+
+@media (width <= 1600px) {
+  .about-us-image {
+    margin-inline-start: -100px;
+    max-inline-size: 700px;
+  }
+
+  .about-us-advantages__card-title {
+    font-size: 22px;
+  }
+
+  .choose-us-image {
+    max-inline-size: 600px;
+  }
+
+  .about-us-offer__card-image {
+    max-inline-size: 270px;
+  }
+
+  .about-us-offer__card-description {
+    font-size: 22px;
+  }
+}
+
+@media (width <= 1350px) {
+  .about-us-image {
+    max-inline-size: 650px;
+  }
+
+  .about-us-advantages__card-title {
+    font-size: 20px;
+  }
+
+  .choose-us-image {
+    max-inline-size: 500px;
+  }
+
+  .team-card__image {
+    max-inline-size: 350px;
+  }
+}
+
+@media (width <= 1170px) {
+  .about-us-image {
+    display: none;
+  }
+
+  .choose-us-image {
+    display: none;
+  }
+}
+
+@media (width <= 570px) {
+  .about-hero__patterns {
+    padding-block: 70px;
+  }
+
+  .about-hero__title {
+    margin: auto;
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+
+  .about-us {
+    padding-block: 70px;
+  }
+
+  .choose-us {
+    padding-block: 70px;
+  }
+
+  .choose-us-info__advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choose-us-info__advantages-title {
+    padding: 10px;
+    font-size: 20px;
+    inline-size: 200px;
+  }
+
+  .choose-us-info__advantages-text {
+    margin-inline-start: 0;
+  }
+
+  .team-card__info {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+
+  .team-card__image {
+    max-inline-size: 250px;
+  }
+
+  .about-us-offer__title {
+    text-align: center;
+  }
 }
