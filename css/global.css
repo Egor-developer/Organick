@@ -85,7 +85,6 @@ body {
 .button {
   display: flex;
   align-items: center;
-  max-inline-size: max-content;
   border: none;
   border-radius: 16px;
   padding: 28px 30px 28px 39px;
@@ -96,17 +95,17 @@ body {
   background-color: var(--button-color);
   transition: background-color 0.2s;
   cursor: pointer;
+  max-inline-size: max-content;
 }
 
 .button:hover {
-  background-color: var(--button-hover-color);
   opacity: 100%;
+  background-color: var(--button-hover-color);
 }
 
 .dark-button {
   display: flex;
   align-items: center;
-  max-inline-size: max-content;
   border: none;
   border: 1px solid transparent;
   border-radius: 16px;
@@ -118,13 +117,14 @@ body {
   background-color: var(--button-dark-color);
   transition: 0.2s;
   cursor: pointer;
+  max-inline-size: max-content;
 }
 
 .dark-button:hover {
   border: 1px solid var(--title-color);
+  opacity: 100%;
   color: var(--title-color);
   background-color: transparent;
-  opacity: 100%;
 }
 
 .button::after,
