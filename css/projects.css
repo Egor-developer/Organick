@@ -32,9 +32,9 @@
 }
 
 .projects-card__title {
+  margin-block: 20px 2px;
   font-weight: 800;
   font-size: 30px;
-  margin-block: 20px 2px;
 }
 
 .projects-card__subtitle {
@@ -75,9 +75,9 @@
   }
 
   .projects-card__title {
+    margin-block: 20px 2px;
     font-weight: 800;
     font-size: 20px;
-    margin-block: 20px 2px;
   }
 
   .projects-card__subtitle {

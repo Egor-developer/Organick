@@ -161,10 +161,10 @@ body {
 }
 
 .card__link {
-  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 25px;
   block-size: 100%;
 }
 
