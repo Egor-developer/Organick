@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/variables.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/shop.css" />
+    <link rel="stylesheet" href="../css/shop-single.css" />
   </head>
   <body>
     <header class="header">
@@ -28,7 +28,7 @@
             <a href="#" class="menu-list__link">Pages</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu-list__link">Shop</a>
+            <a href="./shop.html" class="menu-list__link">Shop</a>
           </li>
           <li class="menu-list__item">
             <a href="./projects.html" class="menu-list__link">Projects</a>
@@ -55,387 +55,79 @@
       </svg>
     </header>
     <main class="main">
-      <section class="shop-hero hero">
-        <div class="shop-hero__patterns hero__patterns">
-          <h1 class="hero__title title">Shop</h1>
+      <section class="shop-single-hero hero">
+        <div class="shop-single-hero__patterns hero__patterns">
+          <h1 class="hero__title title">Shop Single</h1>
         </div>
       </section>
-      <section class="shop-categories container">
-        <ul class="shop-cards__wrapper cards__wrapper">
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Vegetable</span>
-                <img
-                  src="../images/broccoli.png"
-                  srcset="
-                    ../images/broccoli.png    1x,
-                    ../images/broccoli_2x.png 2x,
-                    ../images/broccoli_3x.png 3x
-                  "
-                  alt="broccoli"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Calabrese Broccoli</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$13.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Fresh</span>
-                <img
-                  src="../images/banana.png"
-                  srcset="
-                    ../images/banana.png    1x,
-                    ../images/banana_2x.png 2x,
-                    ../images/banana_3x.png 3x
-                  "
-                  alt="banana"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Fresh Banana Fruites</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$14.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Millets</span>
-                <img
-                  src="../images/nuts.png"
-                  srcset="
-                    ../images/nuts.png    1x,
-                    ../images/nuts_2x.png 2x,
-                    ../images/nuts_3x.png 3x
-                  "
-                  alt="nuts"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Pistachios</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$15.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Vegetable</span>
-                <img
-                  src="../images/tomato.png"
-                  .
-                  srcset="
-                    ../images/tomato.png    1x,
-                    ../images/tomato_2x.png 2x,
-                    ../images/tomato_3x.png 3x
-                  "
-                  alt="tomato"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Vegan Red Tomato</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$17.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Health</span>
-                <img
-                  src="../images/bean.png"
-                  srcset="
-                    ../images/bean.png    1x,
-                    ../images/bean_2x.png 2x,
-                    ../images/bean_3x.png 3x
-                  "
-                  alt="bean"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Mung Bean</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$11.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Nuts</span>
-                <img
-                  src="../images/hazelnut.png"
-                  srcset="
-                    ../images/hazelnut.png    1x,
-                    ../images/hazelnut_2x.png 2x,
-                    ../images/hazelnut_3x.png 3x
-                  "
-                  alt="hazelnut"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Brown Hazelnut</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$12.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Fresh</span>
-                <img
-                  src="../images/eggs.png"
-                  srcset="
-                    ../images/eggs.png    1x,
-                    ../images/eggs_2x.png 2x,
-                    ../images/eggs_3x.png 3x
-                  "
-                  alt="eggs"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Eggs</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$17.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Fresh</span>
-                <img
-                  src="../images/rusk.png"
-                  srcset="
-                    ../images/rusk.png    1x,
-                    ../images/rusk_2x.png 2x,
-                    ../images/rusk_3x.png 3x
-                  "
-                  alt="rusk"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Zelco Suji Elaichi Rusk</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$15.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Vegetable</span>
-                <img
-                  src="../images/mung.png"
-                  srcset="
-                    ../images/mung.png    1x,
-                    ../images/mung_2x.png 2x,
-                    ../images/mung_3x.png 3x
-                  "
-                  alt="mung"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Mung Bean</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$11.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Vegetable</span>
-                <img
-                  src="../images/squash.png"
-                  srcset="
-                    ../images/squash.png    1x,
-                    ../images/squash_2x.png 2x,
-                    ../images/squash_3x.png 3x
-                  "
-                  alt="squash"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Squash</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$12.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Vegetable</span>
-                <img
-                  src="../images/onion.png"
-                  srcset="
-                    ../images/onion.png    1x,
-                    ../images/onion_2x.png 2x,
-                    ../images/onion_3x.png 3x
-                  "
-                  alt="onion"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Onion</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$17.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Vegetable</span>
-                <img
-                  src="../images/cabbage.png"
-                  srcset="
-                    ../images/cabbage.png    1x,
-                    ../images/cabbage_2x.png 2x,
-                    ../images/cabbage_3x.png 3x
-                  "
-                  alt="cabbage"
-                  class="card__image"
-                  .
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Cabbage</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$17.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
-          </li>
+      <section class="shop-single-product__card container">
+        <div class="shop-single-product__card-inner">
+          <div class="card__left">
+            <span class="shop-single-product__card-label card__category-label"
+              >Millets</span
+            >
+            <img
+              src="../images/nuts.png"
+              srcset="
+                ../images/nuts.png    1x,
+                ../images/nuts_2x.png 2x,
+                ../images/nuts_3x.png 3x
+              "
+              alt="nuts"
+              class="shop-single-product__card-label__image"
+            />
+          </div>
+          <div class="card__info">
+            <h3 class="card__info-name card__name title">Pistachios</h3>
+            <img
+              class="card__info-rating card__rating"
+              src="../images/icons/star.svg"
+              alt="star"
+            />
+            <div class="card__info-prise card__prise">
+              <span class="card__info-prise-old card__prise-old">$20.00</span>
+              <span class="card__info-prise-now card__prise-now">$15.00</span>
+            </div>
+            <p class="card__description text">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              had ceased to been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley.
+            </p>
+            <div class="card__quantity">
+              <span class="card__quantity-title title">Quantity :</span>
+              <input
+                class="card__quantity-input"
+                value="1"
+                max="99"
+                min="1"
+                type="number"
+              />
+              <button class="dark-button">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="shop-single-product__card-bottom">
+          <div class="shop-single-product__card-bottom__buttons-wrapper">
+            <button
+              class="shop-single-product__card-bottom__button dark-button"
+            >
+              Product Description
+            </button>
+            <button class="accent-button">Additional Info</button>
+          </div>
+          <p class="shop-single-product__card-bottom__text text">
+            Welcome to the world of natural and organic. Here you can discover
+            the bounty of nature. We have grown on the principles of health,
+            ecology, and care. We aim to give our customers a healthy
+            chemical-free meal for perfect nutrition. It offers about 8–10%
+            carbs. Simple sugars — such as glucose and fructose — make up 70%
+            and 80% of the carbs in raw.
+          </p>
+        </div>
+      </section>
+      <section class="container related-products">
+        <h2 class="related-products__title title">Related Products</h2>
+        <ul class="cards__wrapper">
           <li class="card">
             <a href="./shop-single.html" class="card__link">
               <div class="card__top">

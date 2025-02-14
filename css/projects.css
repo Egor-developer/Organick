@@ -1,0 +1,86 @@
+.projects-hero {
+  background-image: image-set(
+    url(../images/projects-hero-image.jpg) 1x,
+    url(../images/projects-hero-image_2x.jpg) 2x,
+    url(../images/projects-hero-image_3x.jpg) 3x
+  );
+}
+
+.projects-hero__patterns {
+  background-image: url(../images/projects-hero-patterns.svg);
+}
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 40px 25px;
+  margin-block: 150px;
+}
+
+.projects-card {
+  cursor: pointer;
+}
+
+.projects-card:hover .projects-card__image {
+  opacity: 70%;
+}
+
+.projects-card__image {
+  border-radius: 30px;
+  transition: 0.2s;
+}
+
+.projects-card__title {
+  font-weight: 800;
+  font-size: 30px;
+  margin-block: 20px 2px;
+}
+
+.projects-card__subtitle {
+  font-size: 25px;
+}
+
+@media (width <= 1600px) {
+  .projects-card__image {
+    max-inline-size: 400px;
+  }
+}
+
+@media (width <= 1500px) {
+  .projects-card__image {
+    max-inline-size: 350px;
+  }
+}
+
+@media (width <= 1270px) {
+  .projects-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 970px) {
+  .projects-card__image {
+    max-inline-size: 250px;
+  }
+}
+
+@media (width <= 570px) {
+  .projects-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__title {
+    font-size: 30px;
+  }
+
+  .projects-card__title {
+    font-weight: 800;
+    font-size: 20px;
+    margin-block: 20px 2px;
+  }
+
+  .projects-card__subtitle {
+    font-size: 18px;
+  }
+}

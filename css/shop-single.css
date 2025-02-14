@@ -1,0 +1,147 @@
+.shop-single-hero {
+  background-image: image-set(
+    url(../images/shop-single-hero-image.jpg) 1x,
+    url(../images/shop-single-hero-image_2x.jpg) 2x,
+    url(../images/shop-single-hero-image_3x.jpg) 3x
+  );
+}
+
+.shop-single-hero__patterns {
+  background-image: url(../images/shop-single-hero-patterns.svg);
+}
+
+.shop-single-product__card {
+  margin-block: 150px;
+}
+
+.shop-single-product__card-inner {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.card__left {
+  max-inline-size: 600px;
+  background-color: var(--dark-bg-color);
+  border-radius: 20px;
+  position: relative;
+}
+
+.shop-single-product__card-label {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+}
+
+.shop-single-product__card-label__image {
+  inline-size: 600px;
+}
+
+.card__info-name {
+  font-size: 40px;
+  font-weight: 600;
+  border: none;
+  margin-block-end: 8px;
+}
+
+.card__info-rating {
+  margin-block-end: 10px;
+}
+
+.card__info-prise {
+  margin-block-end: 30px;
+}
+
+.card__info-prise-old {
+  font-size: 20px;
+}
+
+.card__info-prise-now {
+  font-size: 25px;
+}
+
+.card__description {
+  margin-block-end: 35px;
+}
+
+.card__quantity {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card__quantity-title {
+  font-size: 20px;
+  font-weight: var(--button-weight);
+  align-self: center;
+}
+
+.card__quantity-input {
+  border: 2px solid var(--title-color);
+  border-radius: 15px;
+  padding: 20px 60px 20px 45px;
+}
+
+.shop-single-product__card-bottom {
+  margin-block-start: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop-single-product__card-bottom__button::after {
+  display: none;
+}
+
+.shop-single-product__card-bottom__buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-block-end: 30px;
+}
+
+.shop-single-product__card-bottom__text {
+  max-inline-size: 1100px;
+  text-align: center;
+}
+
+.related-products {
+  margin-block-end: 150px;
+}
+
+.related-products__title {
+  text-align: center;
+  margin-block-end: 40px;
+}
+
+@media (width <= 1500px) {
+  .shop-single-product__card-label__image {
+    inline-size: 500px;
+  }
+}
+
+@media (width <= 970px) {
+  .shop-single-product__card-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .shop-single-product__card {
+    margin-block: 100px;
+  }
+
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (width <= 570px) {
+  .shop-single-product__card-label__image {
+    max-inline-size: 300px;
+  }
+}

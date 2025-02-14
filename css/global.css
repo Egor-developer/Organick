@@ -127,6 +127,27 @@ body {
   background-color: transparent;
 }
 
+.accent-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  padding: 28px 50px;
+  color: var(--title-color);
+  font-weight: var(--button-weight);
+  font-size: 25px;
+  line-height: 1.2em;
+  background-color: var(--accent-social-media);
+  transition: background-color 0.2s;
+  cursor: pointer;
+  max-inline-size: max-content;
+}
+
+.accent-button:hover {
+  opacity: 100%;
+  background-color: var(--hover-accent-color);
+}
+
 .button::after,
 .dark-button::after {
   content: url(../images/icons/arrow-button.svg);
@@ -135,12 +156,16 @@ body {
 }
 
 .card {
+  border-radius: 30px;
+  background-color: var(--dark-bg-color);
+}
+
+.card__link {
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 30px;
-  padding: 25px;
-  background-color: var(--dark-bg-color);
+  block-size: 100%;
 }
 
 .card__category-label {
