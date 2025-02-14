@@ -85,6 +85,7 @@ body {
 .button {
   display: flex;
   align-items: center;
+  max-inline-size: max-content;
   border: none;
   border-radius: 16px;
   padding: 28px 30px 28px 39px;
@@ -99,11 +100,13 @@ body {
 
 .button:hover {
   background-color: var(--button-hover-color);
+  opacity: 100%;
 }
 
 .dark-button {
   display: flex;
   align-items: center;
+  max-inline-size: max-content;
   border: none;
   border: 1px solid transparent;
   border-radius: 16px;
@@ -121,6 +124,7 @@ body {
   border: 1px solid var(--title-color);
   color: var(--title-color);
   background-color: transparent;
+  opacity: 100%;
 }
 
 .button::after,
@@ -191,4 +195,24 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3em;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__patterns {
+  display: flex;
+  padding-block: 180px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.hero__title {
+  margin: auto;
+  font-size: 70px;
+  line-height: 1.2em;
 }

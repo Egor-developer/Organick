@@ -1,0 +1,19 @@
+.shop-hero {
+  background-image: image-set(
+    url(../images/shop-hero-image.jpeg) 1x,
+    url(../images/shop-hero-image_2x.jpg) 2x,
+    url(../images/shop-hero-image_3x.jpg) 3x
+  );
+}
+
+.shop-hero__patterns {
+  background-image: url(../images/shop-hero-patterns.svg);
+}
+
+.shop-categories {
+  margin-block: 100px 150px;
+}
+
+.shop-cards__wrapper {
+  gap: 40px 20px;
+}
