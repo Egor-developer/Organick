@@ -18,8 +18,8 @@
   margin-block: 150px;
 }
 
-.projects-card {
-  cursor: pointer;
+.projects-card:hover {
+  opacity: 100%;
 }
 
 .projects-card:hover .projects-card__image {

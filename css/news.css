@@ -1,0 +1,21 @@
+.news-hero {
+  background-image: image-set(
+    url(../images/news-hero-image.jpg) 1x,
+    url(../images/news-hero-image_2x.jpg) 2x,
+    url(../images/news-hero-image_3x.jpg) 3x
+  );
+}
+
+.news-hero__patterns {
+  background-image: url(../images/news-hero-patterns.svg);
+}
+
+.page-news__cards {
+  gap: 80px 50px;
+}
+
+@media (width <= 570px) {
+  .page-news__cards {
+    gap: 30px;
+  }
+}

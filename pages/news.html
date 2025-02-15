@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/variables.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/shop-single.css" />
+    <link rel="stylesheet" href="../css/news.css" />
   </head>
   <body>
     <header class="header">
@@ -34,7 +34,7 @@
             <a href="./projects.html" class="menu-list__link">Projects</a>
           </li>
           <li class="menu-list__item">
-            <a href="./news.html" class="menu-list__link">News</a>
+            <a href="#" class="menu-list__link">News</a>
           </li>
         </ul>
       </nav>
@@ -55,202 +55,180 @@
       </svg>
     </header>
     <main class="main">
-      <section class="shop-single-hero hero">
-        <div class="shop-single-hero__patterns hero__patterns">
-          <h1 class="hero__title title">Shop Single</h1>
+      <section class="news-hero hero">
+        <div class="news-hero__patterns hero__patterns">
+          <h1 class="hero__title title">Recent News</h1>
         </div>
       </section>
-      <section class="shop-single-product__card container">
-        <div class="shop-single-product__card-inner">
-          <div class="card__left">
-            <span class="shop-single-product__card-label card__category-label"
-              >Millets</span
-            >
-            <img
-              src="../images/nuts.png"
-              srcset="
-                ../images/nuts.png    1x,
-                ../images/nuts_2x.png 2x,
-                ../images/nuts_3x.png 3x
-              "
-              alt="nuts"
-              class="shop-single-product__card-label__image"
-            />
-          </div>
-          <div class="card__info">
-            <h3 class="card__info-name card__name title">Pistachios</h3>
-            <img
-              class="card__info-rating card__rating"
-              src="../images/icons/star.svg"
-              alt="star"
-            />
-            <div class="card__info-prise card__prise">
-              <span class="card__info-prise-old card__prise-old">$20.00</span>
-              <span class="card__info-prise-now card__prise-now">$15.00</span>
+      <section class="news container">
+        <ul class="page-news__cards news__cards">
+          <li class="news__card">
+            <div class="news__card-date">
+              <span class="news__card-date__number title">6</span>
+              <span class="news__card-date__month title">Feb</span>
             </div>
-            <p class="card__description text">
-              Simply dummy text of the printing and typesetting industry. Lorem
-              had ceased to been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley.
-            </p>
-            <div class="card__quantity">
-              <span class="card__quantity-title title">Quantity :</span>
-              <input
-                class="card__quantity-input"
-                value="1"
-                max="99"
-                min="1"
-                type="number"
-              />
-              <button class="dark-button">Add To Cart</button>
+            <div class="news__card-info">
+              <div class="news__card-info__autor">
+                <img
+                  src="../images/icons/green-autor.svg"
+                  alt="autor icon"
+                  class="news__card-info__autor-image"
+                />
+                <span class="news__card-info__auto-name text"
+                  >Rachi Camelson</span
+                >
+              </div>
+              <h4 class="news__card-info__title title">
+                The Benefits of Vitamin D & How to Get It
+              </h4>
+              <p class="news__card-info__text text">
+                Simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum
+              </p>
+              <a href="./news-page.html" class="news__card-info__button button"
+                >Read More</a
+              >
             </div>
-          </div>
-        </div>
-        <div class="shop-single-product__card-bottom">
-          <div class="shop-single-product__card-bottom__buttons-wrapper">
-            <button
-              class="shop-single-product__card-bottom__button dark-button"
-            >
-              Product Description
-            </button>
-            <button class="accent-button">Additional Info</button>
-          </div>
-          <p class="shop-single-product__card-bottom__text text">
-            Welcome to the world of natural and organic. Here you can discover
-            the bounty of nature. We have grown on the principles of health,
-            ecology, and care. We aim to give our customers a healthy
-            chemical-free meal for perfect nutrition. It offers about 8–10%
-            carbs. Simple sugars — such as glucose and fructose — make up 70%
-            and 80% of the carbs in raw.
-          </p>
-        </div>
-      </section>
-      <section class="container related-products">
-        <h2 class="related-products__title title">Related Products</h2>
-        <ul class="cards__wrapper">
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Health</span>
-                <img
-                  src="../images/cucumber.png"
-                  srcset="
-                    ../images/cucumber.png    1x,
-                    ../images/cucumber_2x.png 2x,
-                    ../images/cucumber_3x.png 3x
-                  "
-                  alt="cucumber"
-                  class="card__image"
-                />
-              </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Сucumber</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$11.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
           </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Nuts</span>
+          <li class="news__card">
+            <div class="news__card-date">
+              <span class="news__card-date__number title">8</span>
+              <span class="news__card-date__month title">Feb</span>
+            </div>
+            <div class="news__card-info">
+              <div class="news__card-info__autor">
                 <img
-                  src="../images/cashew.png"
-                  srcset="
-                    ../images/cashew.png    1x,
-                    ../images/cashew_2x.png 2x,
-                    ../images/cashew_3x.png 3x
-                  "
-                  alt="cashew"
-                  class="card__image"
+                  src="../images/icons/green-autor.svg"
+                  alt="autor icon"
+                  class="news__card-info__autor-image"
                 />
+                <span class="news__card-info__auto-name text"
+                  >Viktor Seminkov</span
+                >
               </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Сashew Nuts</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$12.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
+              <h4 class="news__card-info__title title">
+                Our Favourite Summertime Tommeto
+              </h4>
+              <p class="news__card-info__text text">
+                Simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum
+              </p>
+              <a href="./news-page.html" class="news__card-info__button button"
+                >Read More</a
+              >
+            </div>
           </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Fresh</span>
+          <li class="news__card">
+            <div class="news__card-date">
+              <span class="news__card-date__number title">10</span>
+              <span class="news__card-date__month title">Feb</span>
+            </div>
+            <div class="news__card-info">
+              <div class="news__card-info__autor">
                 <img
-                  src="../images/corn.png"
-                  srcset="
-                    ../images/corn.png    1x,
-                    ../images/corn_2x.png 2x,
-                    ../images/corn_3x.png 3x
-                  "
-                  alt="corn"
-                  class="card__image"
+                  src="../images/icons/green-autor.svg"
+                  alt="autor icon"
+                  class="news__card-info__autor-image"
                 />
+                <span class="news__card-info__auto-name text"
+                  >Viktor Seminkov</span
+                >
               </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Fresh Corn</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$17.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
-              </div>
-            </a>
+              <h4 class="news__card-info__title title">
+                Benefits of Vitamin C & How to Get It
+              </h4>
+              <p class="news__card-info__text text">
+                Simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum
+              </p>
+              <a href="./news-page.html" class="news__card-info__button button"
+                >Read More</a
+              >
+            </div>
           </li>
-          <li class="card">
-            <a href="./shop-single.html" class="card__link">
-              <div class="card__top">
-                <span class="card__category-label">Fresh</span>
+          <li class="news__card">
+            <div class="news__card-date">
+              <span class="news__card-date__number title">13</span>
+              <span class="news__card-date__month title">Feb</span>
+            </div>
+            <div class="news__card-info">
+              <div class="news__card-info__autor">
                 <img
-                  src="../images/almonds.png"
-                  srcset="
-                    ../images/almonds.png    1x,
-                    ../images/almonds_2x.png 2x,
-                    ../images/almonds_3x.png 3x
-                  "
-                  alt="almonds"
-                  class="card__image"
+                  src="../images/icons/green-autor.svg"
+                  alt="autor icon"
+                  class="news__card-info__autor-image"
                 />
+                <span class="news__card-info__auto-name text"
+                  >Viktor Seminkov</span
+                >
               </div>
-              <div class="card__name-prise">
-                <h4 class="card__name">Organic Almonds</h4>
-                <div class="card__bottom">
-                  <div class="card__prise">
-                    <span class="card__prise-old">$20.00</span>
-                    <span class="card__prise-now">$15.00</span>
-                  </div>
-                  <img
-                    class="card__rating"
-                    src="../images/icons/star.svg"
-                    alt="star"
-                  />
-                </div>
+              <h4 class="news__card-info__title title">
+                Research More Organic Foods
+              </h4>
+              <p class="news__card-info__text text">
+                Simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum
+              </p>
+              <a href="./news-page.html" class="news__card-info__button button"
+                >Read More</a
+              >
+            </div>
+          </li>
+          <li class="news__card">
+            <div class="news__card-date">
+              <span class="news__card-date__number title">15</span>
+              <span class="news__card-date__month title">Feb</span>
+            </div>
+            <div class="news__card-info">
+              <div class="news__card-info__autor">
+                <img
+                  src="../images/icons/green-autor.svg"
+                  alt="autor icon"
+                  class="news__card-info__autor-image"
+                />
+                <span class="news__card-info__auto-name text"
+                  >Viktor Seminkov</span
+                >
               </div>
-            </a>
+              <h4 class="news__card-info__title title">
+                Everyday Fresh Fruites
+              </h4>
+              <p class="news__card-info__text text">
+                Simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum
+              </p>
+              <a href="./news-page.html" class="news__card-info__button button"
+                >Read More</a
+              >
+            </div>
+          </li>
+          <li class="news__card">
+            <div class="news__card-date">
+              <span class="news__card-date__number title">21</span>
+              <span class="news__card-date__month title">Feb</span>
+            </div>
+            <div class="news__card-info">
+              <div class="news__card-info__autor">
+                <img
+                  src="../images/icons/green-autor.svg"
+                  alt="autor icon"
+                  class="news__card-info__autor-image"
+                />
+                <span class="news__card-info__auto-name text"
+                  >Viktor Seminkov</span
+                >
+              </div>
+              <h4 class="news__card-info__title title">
+                Don’t Use Plastic Product! it’s Kill Nature
+              </h4>
+              <p class="news__card-info__text text">
+                Simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum
+              </p>
+              <a href="./news-page.html" class="news__card-info__button button"
+                >Read More</a
+              >
+            </div>
           </li>
         </ul>
       </section>

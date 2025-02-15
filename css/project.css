@@ -1,0 +1,141 @@
+.project-hero {
+  padding-block-start: 730px;
+  background-image: image-set(
+    url(../images/project-hero-image.jpg) 1x,
+    url(../images/project-hero-image_2x.jpg) 2x,
+    url(../images/project-hero-image_3x.jpg) 3x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-hero__info-inner {
+  margin-block-start: -200px;
+}
+
+.project-hero__info {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.project-hero__info-left {
+  border-radius: 30px 0 0 30px;
+  padding: 100px 80px;
+  box-shadow: 0px 14px 36px 0px #cccccc40;
+}
+
+.project-hero__info-name {
+  margin-block-end: 20px;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.project-hero__info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 0 30px 30px 0;
+  padding: 100px;
+  background-color: var(--dark-bg-color);
+  min-inline-size: max-content;
+}
+
+.project-hero__info-right__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-hero__info-right__title {
+  font-size: 25px;
+}
+
+.project__info {
+  margin-block: 70px 100px;
+  padding-inline: 230px;
+}
+
+.project__info-inner {
+  margin-block-end: 30px;
+}
+
+.project__info-title {
+  margin-block-end: 25px;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.project__info-text + .project__info-text {
+  margin-block-start: 50px;
+}
+
+.project__info-image__inner {
+  margin-block-end: 20px;
+}
+
+.project__info-image {
+  margin-block-end: 20px;
+  max-inline-size: 100%;
+}
+
+.project__info-image__discription {
+  text-align: center;
+}
+
+@media (width <= 1270px) {
+  .project-hero__info {
+    flex-direction: column;
+  }
+
+  .project-hero__info-left {
+    border-radius: 30px 30px 0 0;
+    padding: 50px;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .project-hero__info-name {
+    font-size: 50px;
+  }
+
+  .project-hero__info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0 0 30px 30px;
+    padding: 50px;
+    background-color: var(--dark-bg-color);
+  }
+
+  .project-hero__info-right__title {
+    justify-self: end;
+  }
+
+  .project__info {
+    margin-block: 70px;
+    padding-inline: 100px;
+  }
+}
+
+@media (width <= 970px) {
+  .project__info {
+    padding-inline: 10px;
+  }
+}
+
+@media (width <= 570px) {
+  .project-hero__info-name {
+    font-size: 40px;
+  }
+
+  .project-hero__info-right__info {
+    grid-template-columns: 1fr;
+  }
+
+  .project-hero__info-right__title {
+    justify-self: start;
+  }
+}
