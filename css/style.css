@@ -45,14 +45,6 @@
   position: relative;
 }
 
-.menu-list__item:nth-child(3)::after {
-  content: url(../images/icons/arrow.svg);
-  position: absolute;
-  right: -15px;
-  bottom: 3px;
-  cursor: pointer;
-}
-
 .menu-list__link {
   color: var(--title-color);
   font-family: "Roboto", sans-serif;

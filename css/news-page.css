@@ -15,19 +15,19 @@
 }
 
 .news-page__info {
+  margin-block-end: 80px;
   border-radius: 30px;
   padding: 80px;
-  background-color: #fff;
   box-shadow: 0px 14px 36px 0px var(--box-shadow-hero-info-color);
-  margin-block-end: 80px;
+  background-color: #fff;
 }
 
 .news-page__info-date {
   display: inline-block;
-  font-size: 18px;
-  font-weight: var(--main-wight);
   margin-inline-end: 30px;
   margin-block-end: 20px;
+  font-weight: var(--main-wight);
+  font-size: 18px;
 }
 
 .news-page__info-date__span {
@@ -43,9 +43,9 @@
 
 .news-page__card-info__autor-image {
   display: inline-block;
+  margin-inline-end: 8px;
   inline-size: 18px;
   block-size: 20px;
-  margin-inline-end: 8px;
 }
 
 .news-page__info-title {
@@ -84,11 +84,11 @@ ul .news-page__item {
 }
 
 .news-page__quote {
+  margin-block: 50px;
+  border-radius: 30px;
   padding: 70px;
   font-weight: var(--button-weight);
-  margin-block: 50px;
   background-color: var(--border-color);
-  border-radius: 30px;
 }
 
 @media (width <= 1270px) {

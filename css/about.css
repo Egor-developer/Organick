@@ -1,6 +1,6 @@
 .about-hero {
   background-image: image-set(
-    url(../images/about-hero-image.jpeg) 1x,
+    url(../images/about-hero-image.jpg) 1x,
     url(../images/about-hero-image_2x.jpg) 2x,
     url(../images/about-hero-image_3x.jpg) 3x
   );
